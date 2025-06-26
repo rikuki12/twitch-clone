@@ -7,6 +7,7 @@ import {
   updateProfile
 } from 'firebase/auth';
 import { auth } from '../firebase-config';
+import UserOnboarding from '../components/UserOnboarding';
 
 const AuthContext = createContext();
 
