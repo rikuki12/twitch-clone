@@ -154,11 +154,11 @@ const UserProfile = () => {
       setUser(prev => prev ? {...prev, ...editForm} : null);
       setIsEditing(false);
       
-      // Show success message (you could add a toast here)
-      console.log('Profile updated successfully!');
+      // Show success toast
+      success('Profile updated successfully! 🎉');
     } catch (error) {
       console.error('Error updating profile:', error);
-      setError('Failed to update profile. Please try again.');
+      error('Failed to update profile. Please try again.');
     } finally {
       setLoading(false);
     }
