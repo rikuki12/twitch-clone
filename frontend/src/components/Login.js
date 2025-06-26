@@ -62,7 +62,7 @@ const Login = ({ onClose, onSwitchToRegister }) => {
                 name="email"
                 value={credentials.email}
                 onChange={handleChange}
-                placeholder="Enter your username"
+                placeholder="Enter your email address"
                 className="w-full bg-twitch-dark-lighter border border-twitch-gray/30 rounded-md pl-10 pr-4 py-3 text-white placeholder-twitch-gray-light focus:outline-none focus:border-twitch-purple transition-colors"
                 required
               />
