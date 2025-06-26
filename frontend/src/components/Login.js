@@ -127,8 +127,8 @@ const Login = ({ onClose, onSwitchToRegister }) => {
         <div className="mt-6 p-4 bg-twitch-dark-lighter rounded-md">
           <p className="text-twitch-gray-light text-sm mb-2">Demo Accounts:</p>
           <div className="space-y-1 text-xs">
-            <p className="text-white">Username: <span className="text-twitch-purple">GamerPro123</span> | Password: <span className="text-twitch-purple">password123</span></p>
-            <p className="text-white">Username: <span className="text-twitch-purple">MusicMaster</span> | Password: <span className="text-twitch-purple">password123</span></p>
+            <p className="text-white">Email: <span className="text-twitch-purple">demo@twitchclone.com</span> | Password: <span className="text-twitch-purple">password123</span></p>
+            <p className="text-white">Email: <span className="text-twitch-purple">streamer@twitchclone.com</span> | Password: <span className="text-twitch-purple">password123</span></p>
           </div>
         </div>
       </div>
