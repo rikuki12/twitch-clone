@@ -10,7 +10,8 @@ import {
   Users,
   ArrowLeft,
   AlertCircle,
-  Play
+  Play,
+  MessageCircle
 } from 'lucide-react';
 
 const LiveStreamViewer = () => {
