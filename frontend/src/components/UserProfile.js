@@ -141,13 +141,22 @@ const UserProfile = () => {
     try {
       setLoading(true);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Update Firebase Auth profile
+      if (auth.currentUser) {
+        await updateProfile(auth.currentUser, {
+          displayName: editForm.full_name || auth.currentUser.displayName
+        });
+      }
       
+      // Update local user state
       setUser(prev => prev ? {...prev, ...editForm} : null);
       setIsEditing(false);
+      
+      // Show success message (you could add a toast here)
+      console.log('Profile updated successfully!');
     } catch (error) {
       console.error('Error updating profile:', error);
+      setError('Failed to update profile. Please try again.');
     } finally {
       setLoading(false);
     }
