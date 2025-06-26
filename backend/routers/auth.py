@@ -95,24 +95,3 @@ async def login_user(user: UserLogin):
     )
     
     return {"access_token": access_token, "token_type": "bearer"}
-
-@router.get("/me", response_model=dict)
-async def get_current_user_profile(current_user: dict = Depends(get_current_user)):
-    """Get current user profile"""
-    # Remove sensitive information
-    user_profile = {
-        "id": str(current_user["_id"]),
-        "username": current_user["username"],
-        "email": current_user["email"],
-        "full_name": current_user.get("full_name"),
-        "avatar_url": current_user.get("avatar_url"),
-        "bio": current_user.get("bio", ""),
-        "followers_count": current_user.get("followers_count", 0),
-        "following_count": current_user.get("following_count", 0),
-        "is_streaming": current_user.get("is_streaming", False),
-        "created_at": current_user.get("created_at")
-    }
-    return user_profile
-
-# Import here to avoid circular imports
-from auth_utils import get_current_user
