@@ -26,6 +26,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/browse/:category" element={<Browse />} />
                 <Route path="/stream/:username" element={<StreamPage />} />
+                <Route path="/profile/:username" element={<UserProfile />} />
+                <Route path="/dashboard" element={<StreamerDashboard />} />
               </Routes>
             </main>
           </div>
