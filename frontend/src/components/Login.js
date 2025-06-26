@@ -53,14 +53,14 @@ const Login = ({ onClose, onSwitchToRegister }) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-white text-sm font-medium mb-2">
-              Username
+              Email
             </label>
             <div className="relative">
               <User className="absolute left-3 top-1/2 transform -translate-y-1/2 text-twitch-gray-light w-5 h-5" />
               <input
-                type="text"
-                name="username"
-                value={credentials.username}
+                type="email"
+                name="email"
+                value={credentials.email}
                 onChange={handleChange}
                 placeholder="Enter your username"
                 className="w-full bg-twitch-dark-lighter border border-twitch-gray/30 rounded-md pl-10 pr-4 py-3 text-white placeholder-twitch-gray-light focus:outline-none focus:border-twitch-purple transition-colors"
