@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { apiService } from '../api';
-import { auth } from '../firebase';
+import { auth } from '../firebase-config';
 import { updateProfile } from 'firebase/auth';
 import { 
   User, 
