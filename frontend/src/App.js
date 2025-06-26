@@ -6,6 +6,8 @@ import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Browse from './components/Browse';
 import StreamPage from './components/StreamPage';
+import UserProfile from './components/UserProfile';
+import StreamerDashboard from './components/StreamerDashboard';
 import './App.css';
 
 function App() {
