@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import HTTPBearer
 from database import get_users_collection
 from models import UserCreate, UserLogin, Token, UserProfile
-from auth_utils import verify_password, get_password_hash, create_access_token
+from auth_utils import verify_password, get_password_hash, create_access_token, get_current_user
 from bson import ObjectId
 from datetime import datetime, timedelta
 
