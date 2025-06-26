@@ -30,7 +30,7 @@ function App() {
                 <Route path="/browse/:category" element={<Browse />} />
                 <Route path="/stream/:username" element={<StreamPage />} />
                 <Route path="/profile/:username" element={<UserProfile />} />
-                <Route path="/dashboard" element={<StreamerDashboard />} />
+                <Route path="/dashboard" element={<StreamerDashboardEnhanced />} />
               </Routes>
             </main>
           </div>
