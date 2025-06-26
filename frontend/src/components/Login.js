@@ -4,7 +4,7 @@ import { Eye, EyeOff, User, Lock } from 'lucide-react';
 
 const Login = ({ onClose, onSwitchToRegister }) => {
   const [credentials, setCredentials] = useState({
-    username: '',
+    email: '',
     password: ''
   });
   const [showPassword, setShowPassword] = useState(false);
