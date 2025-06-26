@@ -4,7 +4,6 @@ import { Eye, EyeOff, User, Lock, Mail, UserCircle } from 'lucide-react';
 
 const Register = ({ onClose, onSwitchToLogin }) => {
   const [formData, setFormData] = useState({
-    username: '',
     email: '',
     password: '',
     confirmPassword: '',
