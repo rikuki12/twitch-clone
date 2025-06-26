@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import { ToastProvider } from './components/Toast';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
@@ -9,6 +10,7 @@ import StreamPage from './components/StreamPage';
 import UserProfile from './components/UserProfile';
 import StreamerDashboardEnhanced from './components/StreamerDashboardEnhanced';
 import LiveStreamViewer from './components/LiveStreamViewer';
+import QuickActions from './components/QuickActions';
 import './App.css';
 
 function App() {
