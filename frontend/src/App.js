@@ -31,6 +31,7 @@ function App() {
                 <Route path="/stream/:username" element={<StreamPage />} />
                 <Route path="/profile/:username" element={<UserProfile />} />
                 <Route path="/dashboard" element={<StreamerDashboardEnhanced />} />
+                <Route path="/watch/:roomId" element={<LiveStreamViewer />} />
               </Routes>
             </main>
           </div>
